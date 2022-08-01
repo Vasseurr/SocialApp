@@ -3,6 +3,9 @@ class AppConstants {
 
   static const FONT_FAMILY = "Poppins";
 
+  //* Bottom Nav Bar
+  static const double iconSize = 30.0;
+
   static const double lowRadius = 10.0;
   static const double midRadius = 30.0;
   static const double highRadius = 50.0;

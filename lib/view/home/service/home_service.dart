@@ -5,7 +5,7 @@ import '../../home/service/base/home_service_base.dart';
 
 class HomeService with HomeServiceBase {
   // final http.Client httpClient;
-  final Dio _dio;
+  final Dio _dio = Dio();
 
-  HomeService(this._dio);
+  HomeService();
 }

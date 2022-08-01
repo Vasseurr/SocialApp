@@ -60,4 +60,8 @@ class MyColors {
 
   //* Main colors
   static const mainButtonColor = Color.fromARGB(255, 44, 42, 135);
+
+  //* Bottom Nav Bar
+  static const Color selectedTabIndexColor = Color.fromARGB(255, 0, 0, 0);
+  static const Color unSelectedTabIndexColor = Color.fromARGB(255, 85, 79, 79);
 }
