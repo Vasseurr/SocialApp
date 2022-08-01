@@ -1,0 +1,10 @@
+{
+    "login": {
+        "username": "Username",
+        "password": "Password"
+    },
+    "button": {
+        "add": "Add",
+        "save": "Save"
+    }
+}

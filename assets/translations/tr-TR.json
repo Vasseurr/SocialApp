@@ -1,0 +1,10 @@
+{
+    "login": {
+        "username": "Kullanıcı Adı",
+        "password": "Şifre"
+    },
+    "button": {
+        "add": "Ekle",
+        "save": "Kaydet"
+    }
+}
