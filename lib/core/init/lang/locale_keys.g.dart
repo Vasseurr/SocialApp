@@ -13,6 +13,7 @@ abstract class  LocaleKeys {
   static const pages_myMessages = 'pages.myMessages';
   static const pages = 'pages';
   static const feature_searchUser = 'feature.searchUser';
+  static const feature_writeMessage = 'feature.writeMessage';
   static const feature = 'feature';
 
 }

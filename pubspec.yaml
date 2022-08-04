@@ -58,6 +58,7 @@ dependencies:
   font_awesome_flutter: ^9.1.0
   sizer: ^2.0.15
   custom_navigation_bar: ^0.8.2
+  scrollable_positioned_list: ^0.3.2
 
 
 dev_dependencies:

@@ -5,8 +5,10 @@ import 'package:sizer/sizer.dart';
 import 'package:social_app/core/components/text/vasseurr_text_form_field.dart';
 import 'package:social_app/core/components/widgets/custom_loading.dart';
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
+import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/model/user.dart';
+import 'package:social_app/view/messages/sub/message_detail/message_detail_page.dart';
 
 import '../../../core/components/widgets/custom_profile_image.dart';
 
@@ -55,7 +57,9 @@ class MessagesPage extends StatelessWidget {
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
           child: InkWell(
-            //   onTap: () =>
+            onTap: () => NavigationRoute.instance.to(() => MessageDetailPage(
+                  userModel: _controller.tempUserList[index],
+                )),
             child: ListTile(
               leading: CustomProfileImage(
                   gender: _controller.tempUserList[index].gender),

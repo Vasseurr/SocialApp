@@ -11,8 +11,8 @@ class VasseurrTFF extends StatelessWidget {
   Color? textColor;
   Color? borderColor;
   Color? fillColor;
-  Icon? prefixIcon;
-  Icon? suffixIcon;
+  Widget? prefixIcon;
+  Widget? suffixIcon;
   String? hintText;
   String? labelText;
   String? helperText;

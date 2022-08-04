@@ -14,6 +14,7 @@
         "myMessages": "Mesajlarım"
     },
     "feature": {
-        "searchUser": "Kullanıcı ara..."
+        "searchUser": "Kullanıcı ara...",
+        "writeMessage": "Mesaj yaz..."
     }
 }

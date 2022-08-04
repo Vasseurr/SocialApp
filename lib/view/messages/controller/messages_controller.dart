@@ -3,15 +3,17 @@ import 'package:social_app/view/messages/model/user.dart';
 import 'package:social_app/view/messages/repository/messages_repository.dart';
 
 class MessagesController extends GetxController {
-  final MessagesRepository _messagesRepository;
+  final MessagesRepository messagesRepository;
   final RxBool _isLoading = false.obs;
   RxList<UserModel> userList = RxList();
   RxList<UserModel> tempUserList = RxList();
 
-  MessagesController(this._messagesRepository);
+  MessagesController(this.messagesRepository);
 
   set isLoading(value) => _isLoading.value = value;
   get isLoading => _isLoading.value;
+
+  changeLoading() => _isLoading.value = !_isLoading.value;
 
   @override
   void onInit() {
@@ -27,6 +29,7 @@ class MessagesController extends GetxController {
       UserModel(userName: "Buse", gender: 'female'),
       UserModel(userName: "Büşra", gender: 'female'),
     ]);
+
     tempUserList.value = userList.toList();
     super.onInit();
   }
