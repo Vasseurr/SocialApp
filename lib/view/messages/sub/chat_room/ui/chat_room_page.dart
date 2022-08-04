@@ -10,27 +10,42 @@ import 'package:social_app/core/components/widgets/custom_profile_image.dart';
 import 'package:social_app/core/constants/colors.dart';
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
 import 'package:social_app/view/messages/model/user.dart';
-import 'package:social_app/view/messages/sub/message_detail/controller/message_detail_controller.dart';
 
-class MessageDetailPage extends StatelessWidget {
-  MessageDetailPage({Key? key, required this.userModel}) : super(key: key);
+import '../../../../../core/components/widgets/empty_text.dart';
+import '../../../../../core/constants/padding_values.dart';
+import '../controller/chat_room_controller.dart';
 
-  final MessageDetailController _controller =
-      Get.put(MessageDetailController());
+class ChatRoomPage extends StatelessWidget {
+  ChatRoomPage({Key? key, required this.userModel}) : super(key: key);
+
+  final ChatRoomController _controller = Get.put(ChatRoomController());
 
   final UserModel userModel;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: _appBar(),
-      body: Obx(() => _controller.isLoading
-          ? const CustomLoading()
-          : Column(
-              children: [
-                _list(),
-                _sendMessage(),
-              ],
-            )),
+      body: Obx(
+        () => _controller.isLoading
+            ? const CustomLoading()
+            : _controller.messageList.isEmpty
+                ? const EmptyText(
+                    text: "Herhangi bir mesaj bulunmamaktadır",
+                  )
+                : _body(),
+      ),
+    );
+  }
+
+  Padding _body() {
+    return Padding(
+      padding: EdgeInsets.only(top: CustomPaddingValues.mediumV),
+      child: Column(
+        children: [
+          _list(),
+          _sendMessage(),
+        ],
+      ),
     );
   }
 
@@ -75,7 +90,6 @@ class MessageDetailPage extends StatelessWidget {
 
   GestureDetector _message(BuildContext context, int index) {
     return GestureDetector(
-      //TODO: will delete message
       onLongPress: () async => await _controller.deleteMessage(index),
       child: Wrap(
         children: [

@@ -4,7 +4,7 @@ import 'package:scrollable_positioned_list/scrollable_positioned_list.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/repository/messages_repository.dart';
 
-class MessageDetailController extends GetxController {
+class ChatRoomController extends GetxController {
   final RxBool _isLoading = false.obs;
   RxList<String> messageList = RxList();
   late MessagesRepository _messagesRepository;
@@ -15,7 +15,7 @@ class MessageDetailController extends GetxController {
   set isLoading(value) => _isLoading.value = value;
   get isLoading => _isLoading.value;
 
-  MessageDetailController() {
+  ChatRoomController() {
     _messagesRepository = Get.find<MessagesController>().messagesRepository;
   }
 

@@ -5,16 +5,23 @@
     },
     "button": {
         "add": "Ekle",
-        "save": "Kaydet"
+        "save": "Kaydet",
+        "chat": "Sohbet"
     },
     "pages": {
         "homepage": "Anasayfa",
         "social": "Akış",
         "profile": "Profil",
-        "myMessages": "Mesajlarım"
+        "myMessages": "Mesajlarım",
+        "newMessage": "Mesaj oluştur"
     },
     "feature": {
         "searchUser": "Kullanıcı ara...",
         "writeMessage": "Mesaj yaz..."
+    },
+    "newMessage": {
+        "to": "Kime",
+        "suggested": "Önerilen",
+        "more": "Daha Fazlası"
     }
 }

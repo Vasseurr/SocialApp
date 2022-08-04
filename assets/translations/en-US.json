@@ -5,17 +5,25 @@
     },
     "button": {
         "add": "Add",
-        "save": "Save"
+        "save": "Save",
+        "chat": "Chat"
     },
     "pages": {
         "homepage": "HomePage",
         "social": "Social",
         "profile": "Profile",
-        "myMessages": "My Messages"
+        "myMessages": "My Messages",
+        "newMessage": "New Message"
+
     },
     "feature": {
         "searchUser": "Search user...",
         "writeMessage": "Write message..."
 
+    },
+    "newMessage": {
+        "to": "To",
+        "suggested": "Suggested",
+        "more": "More"
     }
 }
