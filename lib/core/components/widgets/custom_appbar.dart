@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 
+import '../../../view/main/controller/main_controller.dart';
 import '../../constants/colors.dart';
 
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
-  const CustomAppBar({Key? key}) : super(key: key);
+  CustomAppBar({Key? key}) : super(key: key);
+  final MainController _controller = Get.find<MainController>();
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +21,7 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
                 colors: MyColors.primaryColorList)),
       ),
       title: Text(
-        "Get-X starter",
+        _controller.appBarTitle,
         style: GoogleFonts.lobster(
           color: Colors.white,
           fontWeight: FontWeight.normal,

@@ -23,7 +23,7 @@ class _CustomScaffoldState extends State<CustomScaffold> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: const CustomAppBar(),
+      appBar: CustomAppBar(),
       resizeToAvoidBottomInset: false,
       body: widget.body,
       bottomNavigationBar: CustomNavigationBar(
@@ -32,6 +32,7 @@ class _CustomScaffoldState extends State<CustomScaffold> {
         unSelectedColor: MyColors.unSelectedTabIndexColor,
         elevation: 0,
         currentIndex: _controller.currentBarIndex,
+        strokeColor: Colors.grey,
         onTap: (index) {
           setState(() {
             _controller.changeBarIndex(index);

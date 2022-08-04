@@ -7,5 +7,12 @@ abstract class  LocaleKeys {
   static const button_add = 'button.add';
   static const button_save = 'button.save';
   static const button = 'button';
+  static const pages_homepage = 'pages.homepage';
+  static const pages_social = 'pages.social';
+  static const pages_profile = 'pages.profile';
+  static const pages_myMessages = 'pages.myMessages';
+  static const pages = 'pages';
+  static const feature_searchUser = 'feature.searchUser';
+  static const feature = 'feature';
 
 }
