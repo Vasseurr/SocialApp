@@ -13,7 +13,8 @@
         "social": "Akış",
         "profile": "Profil",
         "myMessages": "Mesajlarım",
-        "newMessage": "Mesaj oluştur"
+        "newMessage": "Mesaj oluştur",
+        "nonetwork": "İnternet Yok"
     },
     "feature": {
         "searchUser": "Kullanıcı ara...",

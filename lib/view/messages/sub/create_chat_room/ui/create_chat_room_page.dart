@@ -119,38 +119,36 @@ class CreateChatRoomPage extends StatelessWidget {
         itemCount: _controller.tempUserList.length,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: InkWell(
+          child: ListTile(
             //* decide which operation will be used select/unselect
             onTap: () => _controller.operate(_controller.tempUserList[index]),
-            child: ListTile(
-              leading: CustomProfileImage(
-                  gender: _controller.tempUserList[index].gender),
-              title: Text(
-                _controller.tempUserList[index].userName,
-                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
+            leading: CustomProfileImage(
+                gender: _controller.tempUserList[index].gender),
+            title: Text(
+              _controller.tempUserList[index].userName,
+              style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
+            ),
+            subtitle: Text(
+              //TODO: change with last message
+              "Hello",
+              style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
+            ),
+            trailing: Container(
+              height: context.getHeight * 0.03.sp,
+              width: context.getWidth * 0.1.sp,
+              decoration: BoxDecoration(
+                gradient: _controller
+                            .getIsSelected(_controller.tempUserList[index]) ==
+                        true
+                    ? const LinearGradient(
+                        begin: Alignment.centerLeft,
+                        end: Alignment.centerRight,
+                        colors: MyColors.primaryColorList)
+                    : null,
+                border: Border.all(color: Colors.purple.shade800),
+                shape: BoxShape.circle,
               ),
-              subtitle: Text(
-                //TODO: change with last message
-                "Hello",
-                style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
-              ),
-              trailing: Container(
-                height: context.getHeight * 0.03.sp,
-                width: context.getWidth * 0.1.sp,
-                decoration: BoxDecoration(
-                  gradient: _controller
-                              .getIsSelected(_controller.tempUserList[index]) ==
-                          true
-                      ? const LinearGradient(
-                          begin: Alignment.centerLeft,
-                          end: Alignment.centerRight,
-                          colors: MyColors.primaryColorList)
-                      : null,
-                  border: Border.all(color: Colors.purple.shade800),
-                  shape: BoxShape.circle,
-                ),
-                child: const SizedBox(),
-              ),
+              child: const SizedBox(),
             ),
           ),
         ),

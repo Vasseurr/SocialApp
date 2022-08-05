@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:sizer/sizer.dart';
+import 'package:social_app/core/init/network/network_build.dart';
 import 'package:social_app/view/main/bindings/main_binding.dart';
 
 import 'core/init/init.dart';
@@ -29,6 +30,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return Sizer(builder: (context, orientation, deviceType) {
       return GetMaterialApp(
+        builder: (context, child) =>
+            NetworkBuild(child: child ?? const SizedBox()),
         debugShowCheckedModeBanner: false,
         initialRoute: Routes.INITIAL,
         localizationsDelegates: context.localizationDelegates,

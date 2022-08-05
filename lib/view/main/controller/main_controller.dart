@@ -2,9 +2,12 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:get/get.dart' hide Trans;
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
 
+import '../../../core/init/network/manager/base/network_base_manager.dart';
+
 class MainController extends GetxController {
   final RxInt _currentBarIndex = 0.obs;
   final RxString _appBarTitle = LocaleKeys.pages_homepage.tr().obs;
+  Rx<NetworkResult> networkResult = NetworkResult.on.obs;
 
   set currentBarIndex(value) => _currentBarIndex.value = value;
   get currentBarIndex => _currentBarIndex.value;

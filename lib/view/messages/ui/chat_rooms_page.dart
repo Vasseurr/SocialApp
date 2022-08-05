@@ -69,7 +69,7 @@ class ChatRoomsPage extends StatelessWidget {
         itemCount: _controller.tempUserList.length,
         itemBuilder: (context, index) => Padding(
           padding: const EdgeInsets.symmetric(vertical: 8.0),
-          child: InkWell(
+          child: ListTile(
             onTap: () => NavigationRoute.instance
                 .to(() => ChatRoomPage(
                       userModel: _controller.tempUserList[index],
@@ -79,17 +79,15 @@ class ChatRoomsPage extends StatelessWidget {
               textEditingController.clear();
               _controller.tempUserList.value = _controller.userList.toList();
             }),
-            child: ListTile(
-              leading: CustomProfileImage(
-                  gender: _controller.tempUserList[index].gender),
-              title: Text(
-                _controller.tempUserList[index].userName,
-                style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
-              ),
-              subtitle: Text(
-                "Hello",
-                style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
-              ),
+            leading: CustomProfileImage(
+                gender: _controller.tempUserList[index].gender),
+            title: Text(
+              _controller.tempUserList[index].userName,
+              style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
+            ),
+            subtitle: Text(
+              "Hello",
+              style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
             ),
           ),
         ),

@@ -13,8 +13,8 @@
         "social": "Social",
         "profile": "Profile",
         "myMessages": "My Messages",
-        "newMessage": "New Message"
-
+        "newMessage": "New Message",
+        "nonetwork": "No Network"
     },
     "feature": {
         "searchUser": "Search user...",

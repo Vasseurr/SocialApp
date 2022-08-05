@@ -4,8 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:social_app/core/components/widgets/custom_appbar.dart';
 import 'package:social_app/core/constants/app_constants.dart';
-import 'package:social_app/core/constants/asset_URL.dart';
 import 'package:social_app/core/constants/colors.dart';
+import 'package:social_app/core/enums/image_enums.dart';
 import 'package:social_app/view/main/controller/main_controller.dart';
 
 // ignore: must_be_immutable
@@ -47,7 +47,7 @@ class _CustomScaffoldState extends State<CustomScaffold> {
           CustomNavigationBarItem(
               icon: const Icon(CupertinoIcons.person_alt_circle)),
           CustomNavigationBarItem(
-              icon: Image.asset(AssetURL.instance.MESSENGER,
+              icon: Image.asset(ImageEnums.messenger.path,
                   color: Colors.white
                       .withOpacity(_controller.currentBarIndex == 3 ? 1 : 0.5),
                   colorBlendMode: BlendMode.modulate)),
