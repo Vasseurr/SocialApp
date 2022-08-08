@@ -7,6 +7,7 @@ abstract class  LocaleKeys {
   static const button_add = 'button.add';
   static const button_save = 'button.save';
   static const button_chat = 'button.chat';
+  static const button_editProfile = 'button.editProfile';
   static const button = 'button';
   static const pages_homepage = 'pages.homepage';
   static const pages_social = 'pages.social';
@@ -22,5 +23,9 @@ abstract class  LocaleKeys {
   static const newMessage_suggested = 'newMessage.suggested';
   static const newMessage_more = 'newMessage.more';
   static const newMessage = 'newMessage';
+  static const profile_posts = 'profile.posts';
+  static const profile_follower = 'profile.follower';
+  static const profile_following = 'profile.following';
+  static const profile = 'profile';
 
 }

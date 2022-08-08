@@ -11,6 +11,7 @@ class VasseurrBttn extends StatelessWidget {
   Color? borderColor;
   Color? textColor;
   Color? buttonSplashColor;
+  TextStyle? textStyle;
   Function() onpressed;
 
   VasseurrBttn(
@@ -23,6 +24,7 @@ class VasseurrBttn extends StatelessWidget {
       this.borderColor,
       this.textColor,
       this.buttonSplashColor,
+      this.textStyle,
       required this.onpressed})
       : super(key: key);
 
@@ -39,10 +41,11 @@ class VasseurrBttn extends StatelessWidget {
       // ignore: sort_child_properties_last
       child: Text(
         buttonText,
-        style: Theme.of(context)
-            .textTheme
-            .apply(bodyColor: textColor ?? Colors.white)
-            .headline6,
+        style: textStyle ??
+            Theme.of(context)
+                .textTheme
+                .apply(bodyColor: textColor ?? Colors.white)
+                .headline6,
       ),
       elevation: 10,
       fillColor: buttonColor ?? MyColors.mainButtonColor,

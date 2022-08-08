@@ -6,7 +6,8 @@
     "button": {
         "add": "Ekle",
         "save": "Kaydet",
-        "chat": "Sohbet"
+        "chat": "Sohbet",
+        "editProfile": "Profil Düzenle"
     },
     "pages": {
         "homepage": "Anasayfa",
@@ -24,5 +25,10 @@
         "to": "Kime",
         "suggested": "Önerilen",
         "more": "Daha Fazlası"
+    },
+    "profile": {
+        "posts": "Gönderi",
+        "follower": "Takipçi",
+        "following": "Takip edilen"
     }
 }

@@ -55,7 +55,9 @@ dependencies:
 
   #Text Customize
   google_fonts: ^3.0.1
+  auto_size_text: ^3.0.0
 
+  #Utility
   font_awesome_flutter: ^9.1.0
   sizer: ^2.0.15
   custom_navigation_bar: ^0.8.2

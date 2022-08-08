@@ -22,8 +22,8 @@ class MainPage extends GetView<MainController> {
           index: controller.currentBarIndex,
           children: [
             const HomePage(),
-            const MyProfilePage(),
             const SocialPage(),
+            MyProfilePage(),
             ChatRoomsPage()
           ],
         ));

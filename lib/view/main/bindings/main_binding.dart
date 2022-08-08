@@ -1,5 +1,6 @@
 import 'package:get/get.dart';
 import 'package:social_app/view/main/controller/main_controller.dart';
+import 'package:social_app/view/myProfile/bindings/my_profile_binding.dart';
 
 import '../../home/bindings/home_binding.dart';
 import '../../messages/bindings/messages_binding.dart';
@@ -12,5 +13,6 @@ class MainBinding extends Bindings {
     }, fenix: true);
     HomeBinding().dependencies();
     MessagesBinding().dependencies();
+    MyProfileBinding().dependencies();
   }
 }

@@ -6,7 +6,9 @@
     "button": {
         "add": "Add",
         "save": "Save",
-        "chat": "Chat"
+        "chat": "Chat",
+        "editProfile": "Edit Profile"
+
     },
     "pages": {
         "homepage": "HomePage",
@@ -25,5 +27,10 @@
         "to": "To",
         "suggested": "Suggested",
         "more": "More"
+    },
+    "profile": {
+        "posts": "Post",
+        "follower": "Follower",
+        "following": "Following"
     }
 }
