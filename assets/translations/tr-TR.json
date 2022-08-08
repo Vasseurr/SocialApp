@@ -29,6 +29,14 @@
     "profile": {
         "posts": "Gönderi",
         "follower": "Takipçi",
-        "following": "Takip edilen"
+        "following": "Takip edilen",
+        "follow": "Takip",
+        "unfollow": "Takipten Çık",
+        "unfollowQuestion": "Takipten çıkmak istediğinize emin misiniz?",
+        "cancel": "İptal",
+        "remove": "Kaldır",
+        "unfollowerQuestion": "Çıkarmak istediğine emin misin?",
+        "noFollower": "Herhangi bir takipçiniz bulunmamaktadır",
+        "noFollowing": "Henüz kimseyi takip etmiyorsunuz"
     }
 }

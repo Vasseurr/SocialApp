@@ -26,6 +26,14 @@ abstract class  LocaleKeys {
   static const profile_posts = 'profile.posts';
   static const profile_follower = 'profile.follower';
   static const profile_following = 'profile.following';
+  static const profile_follow = 'profile.follow';
+  static const profile_unfollow = 'profile.unfollow';
+  static const profile_unfollowQuestion = 'profile.unfollowQuestion';
+  static const profile_cancel = 'profile.cancel';
+  static const profile_remove = 'profile.remove';
+  static const profile_unfollowerQuestion = 'profile.unfollowerQuestion';
+  static const profile_noFollower = 'profile.noFollower';
+  static const profile_noFollowing = 'profile.noFollowing';
   static const profile = 'profile';
 
 }

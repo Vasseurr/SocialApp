@@ -31,6 +31,14 @@
     "profile": {
         "posts": "Post",
         "follower": "Follower",
-        "following": "Following"
+        "following": "Following",
+        "follow": "Follow",
+        "unfollow": "Unfollow",
+        "unfollowQuestion": "Are you sure you want to unfollow?",
+        "cancel": "Cancel",
+        "remove": "Remove",
+        "unfollowerQuestion": "Are you sure want to remove",
+        "noFollower": "You don't have any followers",
+        "noFollowing": "You are not following anyone yet"
     }
 }
