@@ -103,7 +103,6 @@ class FollowingPage extends GetView<FollowerFollowListController> {
   }
 
   filterSearchResults(String searchingText) {
-    //controller.isSearching.value = true;
     List<UserModel> tempSearchList = [];
     tempSearchList.addAll(controller.followingUserModels);
     if (searchingText.isNotEmpty) {
@@ -122,7 +121,6 @@ class FollowingPage extends GetView<FollowerFollowListController> {
     } else {
       controller.tempFollowingUserModels.clear();
       controller.tempFollowingUserModels.addAll(controller.followingUserModels);
-      //  controller.isSearching.value = false;
     }
   }
 

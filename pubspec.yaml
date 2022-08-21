@@ -57,6 +57,9 @@ dependencies:
   google_fonts: ^3.0.1
   auto_size_text: ^3.0.0
 
+  #Image
+  cached_network_image: ^3.2.1
+
   #Utility
   font_awesome_flutter: ^9.1.0
   sizer: ^2.0.15

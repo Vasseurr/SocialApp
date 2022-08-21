@@ -94,10 +94,7 @@ class FollowersPage extends GetView<FollowerFollowListController> {
                 controller.tempFollowerUserModels[index].fullName!,
                 style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
               ),
-              trailing: RemoveFollowerButton(
-                index: index,
-                //controller.followerUserModels.where((value) => value.userName.contains(controller.tempFollowerUserModels[index].userName)).toList()
-              ),
+              trailing: RemoveFollowerButton(index: index),
             ),
           ),
         );
@@ -124,7 +121,6 @@ class FollowersPage extends GetView<FollowerFollowListController> {
   }
 
   filterSearchResults(String searchingText) {
-    //controller.isSearching.value = true;
     List<UserModel> tempSearchList = [];
     tempSearchList.addAll(controller.followerUserModels);
     if (searchingText.isNotEmpty) {
@@ -143,7 +139,6 @@ class FollowersPage extends GetView<FollowerFollowListController> {
     } else {
       controller.tempFollowerUserModels.clear();
       controller.tempFollowerUserModels.addAll(controller.followerUserModels);
-      //  controller.isSearching.value = false;
     }
   }
 }
