@@ -31,6 +31,7 @@ class AppConstants {
   static const double iconSize = 30.0;
 
   static const double lowRadius = 10.0;
+  static const double lowMidRadius = 20.0;
   static const double midRadius = 30.0;
   static const double highRadius = 50.0;
   static const double appBarHeight = 80.0;

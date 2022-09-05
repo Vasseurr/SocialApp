@@ -14,7 +14,7 @@ import 'package:social_app/core/init/lang/locale_keys.g.dart';
 import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/view/myProfile/controller/my_profile_controller.dart';
 import 'package:social_app/view/myProfile/sub/follower_following_list/follower_follow_list_page.dart';
-import 'package:social_app/view/myProfile/ui/widgets/post_card.dart';
+import 'package:social_app/core/components/widgets/post_card.dart';
 import 'package:social_app/view/myProfile/ui/widgets/social_info.dart';
 
 class MyProfilePage extends StatelessWidget {

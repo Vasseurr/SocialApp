@@ -15,7 +15,8 @@
         "profile": "Profil",
         "myMessages": "Mesajlarım",
         "newMessage": "Mesaj oluştur",
-        "nonetwork": "İnternet Yok"
+        "nonetwork": "İnternet Yok",
+        "explore": "Keşfet"
     },
     "feature": {
         "searchUser": "Kullanıcı ara...",

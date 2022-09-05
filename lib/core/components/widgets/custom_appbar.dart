@@ -7,6 +7,7 @@ import 'package:social_app/core/constants/app_constants.dart';
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
 import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/core/init/network/manager/base/network_base_manager.dart';
+import 'package:social_app/core/init/theme/light/color_scheme_light.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/sub/create_chat_room/ui/create_chat_room_page.dart';
 
@@ -14,6 +15,7 @@ import '../../../view/main/controller/main_controller.dart';
 import '../../../view/messages/ui/chat_rooms_page.dart';
 import '../../constants/colors.dart';
 
+// ignore: must_be_immutable
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   CustomAppBar({Key? key, this.title}) : super(key: key);
   final MainController _controller = Get.find<MainController>();
@@ -21,8 +23,12 @@ class CustomAppBar extends StatelessWidget with PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      elevation: 0,
       flexibleSpace: Container(
         decoration: const BoxDecoration(
+          borderRadius: BorderRadius.only(
+              bottomLeft: Radius.circular(AppConstants.lowMidRadius),
+              bottomRight: Radius.circular(AppConstants.lowMidRadius)),
           gradient: LinearGradient(
               begin: Alignment.centerLeft,
               end: Alignment.centerRight,

@@ -21,11 +21,12 @@ class AppThemeLight extends AppTheme with ILightTheme {
         fontFamily: AppConstants.FONT_FAMILY,
         colorScheme: _appColorScheme(),
         textTheme: textTheme(),
-        backgroundColor: ColorSchemeLight.instance.colorSolidBlack,
+        backgroundColor: ColorSchemeLight.instance.colorWhite,
         canvasColor: Colors.transparent,
         appBarTheme: _appBarTheme(),
-        scaffoldBackgroundColor: ColorSchemeLight.instance.colorSolidBlack,
-        buttonColor: ColorSchemeLight.instance.colorBlue,
+        scaffoldBackgroundColor: Colors.white,
+        buttonTheme:
+            ButtonThemeData(buttonColor: ColorSchemeLight.instance.colorBlack),
         iconTheme: IconThemeData(color: ColorSchemeLight.instance.colorWhite)
             .copyWith(),
         floatingActionButtonTheme:
@@ -42,13 +43,11 @@ class AppThemeLight extends AppTheme with ILightTheme {
 
   ColorScheme _appColorScheme() {
     return ColorScheme(
-        primary: colorSchemeLight.colorBlue,
-        primaryVariant: colorSchemeLight.colorWhite,
+        primary: colorSchemeLight.colorBlack,
         secondary: colorSchemeLight.colorBlack,
-        secondaryVariant: colorSchemeLight.colorSolidBlack,
         surface: Colors.white,
         background: colorSchemeLight.colorBlue,
-        onPrimary: Colors.blue.shade300,
+        onPrimary: colorSchemeLight.colorBlack,
         onSecondary: Colors.black38,
         onSurface: Colors.white30,
         onBackground: Colors.black12,
@@ -61,8 +60,8 @@ class AppThemeLight extends AppTheme with ILightTheme {
     return AppBarTheme(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(
-          color: colorSchemeLight.colorWhite,
-          size: 32,
+          color: colorSchemeLight.colorBlack,
+          size: 30,
         )).copyWith();
   }
 }

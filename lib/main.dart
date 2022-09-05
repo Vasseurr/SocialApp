@@ -7,6 +7,7 @@ import 'package:social_app/view/main/bindings/main_binding.dart';
 
 import 'core/init/init.dart';
 import 'core/init/lang/localization_manager.dart';
+import 'core/init/theme/app_theme_light.dart';
 import 'core/routes/app_pages.dart';
 import 'core/routes/app_routes.dart';
 
@@ -37,7 +38,7 @@ class MyApp extends StatelessWidget {
         localizationsDelegates: context.localizationDelegates,
         supportedLocales: context.supportedLocales,
         locale: context.locale,
-        //theme: AppThemeLight.instance.theme,
+        theme: AppThemeLight.instance.theme,
         getPages: AppPages.pages,
         initialBinding: MainBinding(),
       );

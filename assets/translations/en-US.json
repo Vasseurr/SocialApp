@@ -16,7 +16,8 @@
         "profile": "Profile",
         "myMessages": "My Messages",
         "newMessage": "New Message",
-        "nonetwork": "No Network"
+        "nonetwork": "No Network",
+        "explore": "Explore"
     },
     "feature": {
         "searchUser": "Search user...",

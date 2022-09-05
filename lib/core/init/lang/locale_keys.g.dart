@@ -15,6 +15,7 @@ abstract class  LocaleKeys {
   static const pages_myMessages = 'pages.myMessages';
   static const pages_newMessage = 'pages.newMessage';
   static const pages_nonetwork = 'pages.nonetwork';
+  static const pages_explore = 'pages.explore';
   static const pages = 'pages';
   static const feature_searchUser = 'feature.searchUser';
   static const feature_writeMessage = 'feature.writeMessage';
