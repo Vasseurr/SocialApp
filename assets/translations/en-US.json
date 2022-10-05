@@ -40,6 +40,8 @@
         "remove": "Remove",
         "unfollowerQuestion": "Are you sure want to remove",
         "noFollower": "You don't have any followers",
-        "noFollowing": "You are not following anyone yet"
+        "noFollowing": "You are not following anyone yet",
+        "myFollowers": "My Followers",
+        "myFollowing": "My Following"
     }
 }

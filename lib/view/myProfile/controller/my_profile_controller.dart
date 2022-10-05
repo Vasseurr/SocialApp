@@ -8,7 +8,7 @@ class MyProfileController extends GetxController {
   final RxList<List<String>> postImages = RxList();
   final RxList<String> storiesImage = RxList();
   final Rx<UserProfileModel> userProfile = UserProfileModel(
-          postNumber: "300", followerNumber: "14K", followingNumber: "1,435")
+          postNumber: "9", followerNumber: "8", followingNumber: "5")
       .obs;
 
   final MyProfileRepository _myProfileRepository;

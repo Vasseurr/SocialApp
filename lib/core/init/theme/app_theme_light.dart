@@ -60,7 +60,7 @@ class AppThemeLight extends AppTheme with ILightTheme {
     return AppBarTheme(
         backgroundColor: Colors.white,
         iconTheme: IconThemeData(
-          color: colorSchemeLight.colorBlack,
+          color: colorSchemeLight.colorWhite,
           size: 30,
         )).copyWith();
   }

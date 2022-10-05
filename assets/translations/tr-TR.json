@@ -38,6 +38,8 @@
         "remove": "Kaldır",
         "unfollowerQuestion": "Çıkarmak istediğine emin misin?",
         "noFollower": "Herhangi bir takipçiniz bulunmamaktadır",
-        "noFollowing": "Henüz kimseyi takip etmiyorsunuz"
+        "noFollowing": "Henüz kimseyi takip etmiyorsunuz",
+        "myFollowers": "Takipçilerim",
+        "myFollowing": "Takip ettiklerim"
     }
 }

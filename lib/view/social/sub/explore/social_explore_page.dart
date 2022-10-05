@@ -23,6 +23,14 @@ class SocialExplorePage extends StatelessWidget {
       appBar: AppBar(
         elevation: 0,
         title: Text(LocaleKeys.pages_explore.tr()),
+        leading: IconButton(
+          onPressed: () => Navigator.pop(context),
+          icon: const Icon(
+            Icons.arrow_back,
+            size: 30,
+            color: Colors.black,
+          ),
+        ),
         toolbarHeight: context.height * .06,
       ),
       body: Obx(

@@ -1,8 +1,10 @@
+import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
+import 'package:get/get.dart' hide Trans;
 import 'package:sizer/sizer.dart';
 import 'package:social_app/core/constants/app_constants.dart';
 import 'package:social_app/core/constants/colors.dart';
+import 'package:social_app/core/init/lang/locale_keys.g.dart';
 
 import 'controller/follower_following_list_controller.dart';
 import 'followers_page.dart';
@@ -69,12 +71,12 @@ class _FollowerFollowingListPageState extends State<FollowerFollowingListPage>
         labelStyle: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w500),
         indicatorColor: Colors.white,
         indicatorWeight: 3.0,
-        tabs: const [
+        tabs: [
           Tab(
-            text: "Takipçilerim",
+            text: LocaleKeys.profile_myFollowers.tr(),
           ),
           Tab(
-            text: "Takip Ettiklerim",
+            text: LocaleKeys.profile_myFollowing.tr(),
           ),
         ],
       ),

@@ -35,6 +35,8 @@ abstract class  LocaleKeys {
   static const profile_unfollowerQuestion = 'profile.unfollowerQuestion';
   static const profile_noFollower = 'profile.noFollower';
   static const profile_noFollowing = 'profile.noFollowing';
+  static const profile_myFollowers = 'profile.myFollowers';
+  static const profile_myFollowing = 'profile.myFollowing';
   static const profile = 'profile';
 
 }
