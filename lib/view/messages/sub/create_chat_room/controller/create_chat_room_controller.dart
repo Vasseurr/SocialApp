@@ -1,12 +1,11 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
-import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/model/user.dart';
 import 'package:social_app/view/messages/repository/messages_repository.dart';
 import 'package:social_app/view/messages/sub/chat_room/ui/chat_room_page.dart';
 
-import '../../../../../core/routes/app_routes.dart';
+import '../../../../../core/routes/navigation/navigation_route.dart';
 
 class CreateChatRoomController extends GetxController {
   late MessagesRepository _messagesRepository;
@@ -31,19 +30,19 @@ class CreateChatRoomController extends GetxController {
   @override
   void onInit() {
     userList.addAll([
-      UserModel(userName: "Feyza", gender: 'female'),
-      UserModel(userName: "Nur", gender: 'female'),
-      UserModel(userName: "Beyza", gender: 'female'),
-      UserModel(userName: "Furkan", gender: 'male'),
-      UserModel(userName: "Eda", gender: 'female'),
-      UserModel(userName: "Recep", gender: 'male'),
-      UserModel(userName: "Hüseyin", gender: 'male'),
-      UserModel(userName: "Kadir", gender: 'male'),
-      UserModel(userName: "Eray", gender: 'male'),
-      UserModel(userName: "Buse", gender: 'female'),
-      UserModel(userName: "Okan", gender: 'male'),
-      UserModel(userName: "Elif", gender: 'female'),
-      UserModel(userName: "Melisa", gender: 'female'),
+      UserModel(userName: "Alexandra", gender: 'female'),
+      UserModel(userName: "Phillip", gender: 'male'),
+      UserModel(userName: "Alice", gender: 'female'),
+      UserModel(userName: "Liam", gender: 'male'),
+      UserModel(userName: "Audrey", gender: 'female'),
+      UserModel(userName: "Lawrence", gender: 'male'),
+      UserModel(userName: "Elliott", gender: 'male'),
+      UserModel(userName: "Edmund", gender: 'male'),
+      UserModel(userName: "Earl", gender: 'male'),
+      UserModel(userName: "Florence", gender: 'female'),
+      UserModel(userName: "Dwight", gender: 'male'),
+      UserModel(userName: "Freya", gender: 'female'),
+      UserModel(userName: "Faye", gender: 'female'),
     ]);
     selectedUserBoolList.value =
         List.filled(userList.length, false, growable: false);

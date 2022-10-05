@@ -18,21 +18,21 @@ class FollowerFollowListController extends GetxController {
   void onInit() {
     super.onInit();
     followerUserModels.addAll([
-      UserModel(userName: "Eda", gender: 'female'),
-      UserModel(userName: "Nevin", gender: 'female'),
-      UserModel(userName: "Ayşe", gender: 'female'),
-      UserModel(userName: "Furkan", gender: 'male'),
-      UserModel(userName: "Hüseyin", gender: 'male'),
-      UserModel(userName: "Melisa", gender: 'female'),
-      UserModel(userName: "Buse", gender: 'female'),
-      UserModel(userName: "Büşra", gender: 'female'),
+      UserModel(userName: "Alexandra", gender: 'female'),
+      UserModel(userName: "Alice", gender: 'female'),
+      UserModel(userName: "Grace", gender: 'female'),
+      UserModel(userName: "John", gender: 'male'),
+      UserModel(userName: "Alfie", gender: 'male'),
+      UserModel(userName: "Audrey", gender: 'female'),
+      UserModel(userName: "Freya", gender: 'female'),
+      UserModel(userName: "Florence", gender: 'female'),
     ]);
     followingUserModels.addAll([
-      UserModel(userName: "Eda", gender: 'female'),
-      UserModel(userName: "Hüseyin", gender: 'male'),
-      UserModel(userName: "Furkan", gender: 'male'),
-      UserModel(userName: "Nevin", gender: 'female'),
-      UserModel(userName: "Büşra", gender: 'female'),
+      UserModel(userName: "Harriet", gender: 'female'),
+      UserModel(userName: "Rafe", gender: 'male'),
+      UserModel(userName: "Raleigh", gender: 'male'),
+      UserModel(userName: "Isabelle", gender: 'female'),
+      UserModel(userName: "Helena", gender: 'female'),
     ]);
   }
 

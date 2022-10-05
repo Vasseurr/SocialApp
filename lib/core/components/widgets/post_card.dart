@@ -2,9 +2,9 @@ import 'dart:ui';
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:social_app/core/init/navigation/navigation_route.dart';
 
 import '../../../view/social/sub/explore/social_explore_page.dart';
+import '../../routes/navigation/navigation_route.dart';
 import 'custom_cache_network_image.dart';
 
 // ignore: must_be_immutable
@@ -25,6 +25,7 @@ class _PostCardState extends State<PostCard> {
       child: Stack(
         children: [
           GestureDetector(
+              //todo: navigate this page only from the social page, in profile user will see own posts
               onTap: () => NavigationRoute.instance.to(
                   () => SocialExplorePage(firstImageUrls: widget.photoUrls),
                   transition: Transition.native),

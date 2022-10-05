@@ -29,11 +29,11 @@ class SocialExplorePage extends StatelessWidget {
         () => controller.isLoading.value == true
             ? const CustomLoading()
             : ListView.builder(
-                itemCount: controller.userList.length + 1,
+                itemCount: controller.userList.length,
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
                   if (index == 0) {
-                    //Todo: change with user model like as below
+                    //todo: change with user model like as below
                     return SizedBox(
                       child: CustomCacheNetworkImage(
                         imageUrl: firstImageUrls.first,

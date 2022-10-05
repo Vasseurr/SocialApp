@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import '../../constants/app_constants.dart';
 
 class NavigationRoute {
+  //Todo: add a toWithMustLogin function and check the user login or not, if not show snackbar, otherwise navigate the page
+
   static final NavigationRoute _instance = NavigationRoute._init();
 
   static NavigationRoute get instance => _instance;

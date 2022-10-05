@@ -129,7 +129,7 @@ class CreateChatRoomPage extends StatelessWidget {
               style: TextStyle(fontSize: 14.sp, fontWeight: FontWeight.w600),
             ),
             subtitle: Text(
-              //TODO: change with last message
+              //todo: change with last message
               "Hello",
               style: TextStyle(fontSize: 10.sp, fontWeight: FontWeight.w400),
             ),

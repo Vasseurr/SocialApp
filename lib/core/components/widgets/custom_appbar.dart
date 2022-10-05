@@ -5,15 +5,14 @@ import 'package:google_fonts/google_fonts.dart';
 import 'package:sizer/sizer.dart';
 import 'package:social_app/core/constants/app_constants.dart';
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
-import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/core/init/network/manager/base/network_base_manager.dart';
-import 'package:social_app/core/init/theme/light/color_scheme_light.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/sub/create_chat_room/ui/create_chat_room_page.dart';
 
 import '../../../view/main/controller/main_controller.dart';
 import '../../../view/messages/ui/chat_rooms_page.dart';
 import '../../constants/colors.dart';
+import '../../routes/navigation/navigation_route.dart';
 
 // ignore: must_be_immutable
 class CustomAppBar extends StatelessWidget with PreferredSizeWidget {

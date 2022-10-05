@@ -7,12 +7,12 @@ import 'package:social_app/core/components/widgets/custom_loading.dart';
 import 'package:social_app/core/components/widgets/empty_text.dart';
 import 'package:social_app/core/constants/padding_values.dart';
 import 'package:social_app/core/init/lang/locale_keys.g.dart';
-import 'package:social_app/core/init/navigation/navigation_route.dart';
 import 'package:social_app/view/messages/controller/messages_controller.dart';
 import 'package:social_app/view/messages/model/user.dart';
 import 'package:social_app/view/messages/sub/chat_room/ui/chat_room_page.dart';
 
 import '../../../core/components/widgets/custom_profile_image.dart';
+import '../../../core/routes/navigation/navigation_route.dart';
 
 class ChatRoomsPage extends StatelessWidget {
   ChatRoomsPage({Key? key}) : super(key: key);

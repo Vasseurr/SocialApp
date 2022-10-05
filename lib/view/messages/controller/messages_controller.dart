@@ -19,15 +19,15 @@ class MessagesController extends GetxController {
   void onInit() {
     _isLoading.value = true;
     userList.addAll([
-      UserModel(userName: "Okan", gender: 'male'),
-      UserModel(userName: "Eda", gender: 'female'),
-      UserModel(userName: "Nevin", gender: 'female'),
-      UserModel(userName: "Ayşe", gender: 'female'),
-      UserModel(userName: "Furkan", gender: 'male'),
-      UserModel(userName: "Hüseyin", gender: 'male'),
-      UserModel(userName: "Melisa", gender: 'female'),
-      UserModel(userName: "Buse", gender: 'female'),
-      UserModel(userName: "Büşra", gender: 'female'),
+      UserModel(userName: "Prest", gender: 'male'),
+      UserModel(userName: "John", gender: 'male'),
+      UserModel(userName: "Alexandra", gender: 'female'),
+      UserModel(userName: "Alice", gender: 'female'),
+      UserModel(userName: "Alfie", gender: 'male'),
+      UserModel(userName: "Devon", gender: 'male'),
+      UserModel(userName: "Audrey", gender: 'female'),
+      UserModel(userName: "Freya", gender: 'female'),
+      UserModel(userName: "Florence", gender: 'female'),
     ]);
 
     tempUserList.value = userList.toList();
@@ -42,7 +42,6 @@ class MessagesController extends GetxController {
 
   @override
   void onClose() {
-    // TODO: implement onClose
     super.onClose();
   }
 }

@@ -17,7 +17,7 @@ class LocalizationManager {
 
   LocalizationManager._init();
 
-  //Locale getStartLocale() => const Locale('en', 'US');
-  Locale getStartLocale() => const Locale('tr', 'TR');
+  Locale getStartLocale() => const Locale('en', 'US');
+  //Locale getStartLocale() => const Locale('tr', 'TR');
   Locale getFallbackLocale() => const Locale('en', 'US');
 }

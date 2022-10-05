@@ -24,23 +24,21 @@ class ChatRoomController extends GetxController {
   @override
   void onInit() {
     super.onInit();
-    messageList.add("Merhaba");
-    messageList.add("Merhaba");
-    messageList.add("Selam naber");
-    messageList.add("İyidir senden naber");
-    messageList.add("İyidir benden de");
-    messageList.add("Nerede yaşıyorsun");
+    messageList.add("Hello");
+    messageList.add("Hi");
+    messageList.add("How are you?");
+    messageList.add("I'm fine, you?");
+    messageList.add("Good. Did you just arrive here?");
+    messageList.add("Yeah, I arrived last week.");
   }
 
   @override
   void onReady() {
-    // TODO: implement onReady
     super.onReady();
   }
 
   @override
   void onClose() {
-    // TODO: implement onClose
     super.onClose();
   }
 

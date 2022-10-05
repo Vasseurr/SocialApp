@@ -13,7 +13,6 @@ extension LottiePathEnumExtension on LottiePathEnum {
     }
   }
 
-  //TODO: add parameter for height and width
   Widget get toWidget => Lottie.asset(lottieValue);
 
   String _pathValue(String path) => 'assets/lottie/$path.json';

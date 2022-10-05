@@ -68,7 +68,7 @@ class SocialExploreController extends GetxController {
               [AppConstants.tempUrl2],
               [AppConstants.tempUrl1],
             ],
-            userName: "edaltsl",
+            userName: "felcti",
             gender: "female"),
         UserModel(
             profileImageUrl: AppConstants.avatarFemaleURL,
@@ -79,7 +79,7 @@ class SocialExploreController extends GetxController {
             storiesUrlList: [
               [AppConstants.tempUrl2],
             ],
-            userName: "busracan",
+            userName: "flore",
             gender: "female"),
         UserModel(
             profileImageUrl: AppConstants.avatarMaleURL,
@@ -93,7 +93,7 @@ class SocialExploreController extends GetxController {
               [AppConstants.tempUrl2],
               [AppConstants.tempUrl1],
             ],
-            userName: "furkanshy",
+            userName: "phill",
             gender: "male"),
         UserModel(
             profileImageUrl: AppConstants.avatarFemaleURL,
@@ -105,7 +105,7 @@ class SocialExploreController extends GetxController {
               [AppConstants.tempUrl4],
               [AppConstants.tempUrl2],
             ],
-            userName: "melekkhh",
+            userName: "ggeorgia",
             gender: "male"),
         UserModel(
             profileImageUrl: AppConstants.avatarMaleURL,
@@ -117,7 +117,7 @@ class SocialExploreController extends GetxController {
               [AppConstants.tempUrl5],
               [AppConstants.tempUrl2],
             ],
-            userName: "kemalKlc",
+            userName: "prest",
             gender: "male"),
         UserModel(
             profileImageUrl: AppConstants.avatarFemaleURL,
@@ -129,7 +129,7 @@ class SocialExploreController extends GetxController {
               [AppConstants.tempUrl1],
               [AppConstants.tempUrl2],
             ],
-            userName: "melekmosso",
+            userName: "hannahhh",
             gender: "female"),
       ],
     );
