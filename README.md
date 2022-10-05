@@ -4,6 +4,7 @@ This app is kind of social media app which include users can share posts or stor
 
 ## Features
 - GetX state management
+- Dio for networking
 - Hive for caching
 - Localizations (Turkish, English)
 - Internet connectivity (mobile, WI-FI, etc.)
