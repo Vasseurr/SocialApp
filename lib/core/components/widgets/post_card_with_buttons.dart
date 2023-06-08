@@ -15,7 +15,7 @@ class PostCardWithButtons extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: context.height * .66,
+      height: context.height * .67,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
