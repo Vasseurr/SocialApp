@@ -11,6 +11,8 @@ This app is kind of social media app which include users can share posts or stor
 - Lottie Animations
 
 ## Screenshots
+![ScHat](https://github.com/Vasseurr/SocialApp/assets/67058617/65554790-046e-458a-b6a1-92b514c8f2ad)
+
 <details>
 <summary>Click here to show the screenshots of project</summary>
 <div>
